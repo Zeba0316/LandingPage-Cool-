@@ -7,8 +7,74 @@
     background-color: rgb(252, 248, 238);
 
     .up {
+        display: flex;
+        flex-direction: column;
         height: 100vh;
+        position: relative;
+        background-size: 90%;
+        background-position: top;
+        background-repeat: no-repeat;
         background-image: url("../../../public/bubble.png");
+
+        >p {
+            color: black;
+            font-size: 4.5rem;
+            font-family: "custom-font2";
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        p:first-child {
+            top: 11%;
+        }
+
+        p:nth-child(2) {
+            top: 22%;
+        }
+
+        div {
+            flex: 1;
+            width: 100%;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 12rem;
+                width: 12rem;
+                position: absolute;
+                border-radius: 50%;
+                background: radial-gradient(circle,rgb(254,247,230),rgba(254, 247, 230, 0.939),rgba(0, 0, 0, 0.136));
+                p{
+                    color: rgba(0, 0, 0, 0.78);
+                    font-size: 2rem;
+                    font-family: "custom-font2";
+                    
+                }
+            }
+            div:nth-child(1){
+                bottom: 20%;
+                left: 14%;
+
+            }
+            div:nth-child(2){
+                bottom: 30%;
+                left: 34.5%;
+
+            }
+            div:nth-child(3){
+                bottom: 14%;
+                left: 52.5%;
+
+            }
+            div:nth-child(4){
+                bottom: 19%;
+                left: 72.5%;
+
+            }
+        }
     }
 
     .down {
