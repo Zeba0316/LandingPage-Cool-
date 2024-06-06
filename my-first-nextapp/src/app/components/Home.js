@@ -1,6 +1,7 @@
 import React from 'react'
 import "../css/home.scss"
 import Nav from './Nav'
+import Footer from './Footer'
 
 const Hero = () => {
     return (
@@ -17,6 +18,7 @@ function Home() {
         <div className='home'>
             <Nav />
             <Hero />
+            <Footer/>
         </div>
     )
 }
