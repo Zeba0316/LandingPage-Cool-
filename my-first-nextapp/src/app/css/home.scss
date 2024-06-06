@@ -7,12 +7,93 @@
         flex: 1;
         display: flex;
         height: 85vh;
-    
-        .left{
+
+        .left {
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: space-around;
+            align-items: center;
+
+            div {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    position: absolute;
+                }
+
+                p {
+                    color: black;
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .mid {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 80%;
+                height: 90%;
+                background-color: red;
+                
+               img{
+                width: 90%;
+                height: 90%;
+                object-fit: cover;
+               }
+            }
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            div {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                padding-left: 10;
+                padding-right: 10;
+
+                img {
+                    position: absolute;
+                }
+
+                div {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    p {
+                        color: black;
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
         }
 
     }
