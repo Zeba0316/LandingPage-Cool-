@@ -5,6 +5,7 @@ import Nav from './Nav'
 const Hero = () => {
     return (
         <div className='hero' >
+            <p className='name'>Cool Can</p>
             <div className='left'>
                 <div>
                     <p>Our Summer Sale</p>
@@ -16,7 +17,6 @@ const Hero = () => {
                 </div>
             </div>
             <div className='mid'>
-                <p className='name'>Cool Can</p>
                 <div>
                     <p className='offer'>Don't Miss</p>
                     <p className='cost'>Rs 80 only!</p>

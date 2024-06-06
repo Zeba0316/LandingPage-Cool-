@@ -7,6 +7,24 @@
         flex: 1;
         display: flex;
         height: 85vh;
+        position: relative;
+
+        .name {
+            color: rgba(255, 255, 255, 0.866);
+            font-family: "custom-font";
+            font-size: 10rem;
+            font-weight: bold;
+            position: absolute;
+            padding-left: "auto";
+            padding-right: "auto";
+            bottom: 4%;
+            left: 50%;
+            transform: translateX(-50%);
+            rotate: -3.5deg;
+            text-shadow: 2px 2px 1px rgba(255, 166, 0, 0.523);
+            letter-spacing: 0.2rem;
+            z-index: 3;
+        }
 
         .left {
             flex: 1;
@@ -44,23 +62,6 @@
             align-items: center;
             position: relative;
 
-            .name {
-                color: rgba(255, 255, 255, 0.866);
-                font-family: "custom-font";
-                font-size: 7.7rem;
-                font-weight: bold;
-                position: absolute;
-                padding-left: "auto";
-                padding-right: "auto";
-                bottom: 5%;
-                left: 50%;
-                transform: translateX(-50%);
-                rotate: -3.5deg;
-                text-shadow: 2px 2px 1px rgba(255, 166, 0, 0.523);
-                letter-spacing: 0.2rem;
-                z-index: 3;
-            }
-
             div {
                 display: flex;
                 justify-content: center;
@@ -72,14 +73,14 @@
                 .offer {
                     color: rgb(238, 119, 74);
                     font-family: "custom-font";
-                    font-size: 3.7rem;
+                    font-size: 5rem;
                     font-weight: bold;
                     position: absolute;
                     padding-left: "auto";
                     padding-right: "auto";
-                    top: 10%;
-                    left: -8%;
-                    rotate: -28deg;
+                    top: 15%;
+                    left: -12%;
+                    rotate: -35deg;
                     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.579);
                     z-index: 3;
 
@@ -88,12 +89,12 @@
                 .cost {
                     color: rgb(238, 119, 74);
                     font-family: "custom-font";
-                    font-size: 3.7rem;
+                    font-size: 5rem;
                     font-weight: bold;
                     position: absolute;
-                    top: 10%;
-                    right: 1.5%;
-                    rotate: 25deg;
+                    top: 15%;
+                    right: -5%;
+                    rotate: 35deg;
                     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.579);
                     z-index: 3;
                 }
@@ -149,7 +150,7 @@
 
                     p {
                         color: black;
-                    font-family: "custom-font2";
+                        font-family: "custom-font2";
                         font-weight: 500;
                         font-size: 0.9rem;
                     }
