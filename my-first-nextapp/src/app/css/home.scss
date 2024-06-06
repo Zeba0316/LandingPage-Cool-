@@ -1,0 +1,21 @@
+.home {
+    height: 100vh;
+    width: auto;
+    background-image: url("../../../public/HomeBg.png");
+
+    .hero {
+        flex: 1;
+        display: flex;
+        height: 85vh;
+    
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: space-around;
+        }
+
+    }
+
+
+}
