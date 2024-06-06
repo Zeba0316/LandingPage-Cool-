@@ -41,7 +41,7 @@ function Footer() {
         </div>
         <div className="leftFoot">
             <h2>Newsletter</h2>
-            <input placeholder="Enter your email" type="email"/>
+            <input  style={{color:"black"}} placeholder="Enter your email" type="email"/>
             <button>Subscribe</button>
         </div>
       </div>

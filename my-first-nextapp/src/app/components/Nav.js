@@ -21,7 +21,8 @@ const Nav = () => {
             alignItems: "center",
         },
         para: {
-            fontSize: "1.7rem",
+            fontSize: "1.8rem",
+            fontFamily:"custom-font2",
             fontWeight: 500,
             cursor: "default"
         },
@@ -33,8 +34,8 @@ const Nav = () => {
         },
         categories: {
             color: "black",
-            fontSize: "1.4rem",
-            fontWeight: 500,
+            fontFamily: "custom-font2",
+            fontSize: "1.3rem",
             cursor: "pointer"
         },
         buy: {
@@ -50,6 +51,7 @@ const Nav = () => {
         },
         buyPara: {
             color:"black",
+            fontFamily: "custom-font",
             fontSize: "1.3rem",
             fontWeight: "bold",
             cursor: "default"

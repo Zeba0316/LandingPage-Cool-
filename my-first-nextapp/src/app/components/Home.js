@@ -1,7 +1,6 @@
 import React from 'react'
 import "../css/home.scss"
 import Nav from './Nav'
-import Footer from './Footer'
 
 const Hero = () => {
     return (
@@ -13,13 +12,17 @@ const Hero = () => {
                 </div>
                 <div>
                     <img src="./leftArrow.png" />
-                    <img style={{ position: "absolute", top: "15%", height: "150px", width: "150px" }} src="./blueberry.png" />
+                    <img className='smallCan' src="./blueberry.png" />
                 </div>
             </div>
             <div className='mid'>
+                <p className='name'>Cool Can</p>
                 <div>
-                    <img src='./homeCanBg.png'/>
+                    <p className='offer'>Don't Miss</p>
+                    <p className='cost'>Rs 80 only!</p>
+                    <img className='bg' src='./homeCanBg.png' />
                 </div>
+                <img className='canBg' src='./lemon.png' />
             </div>
             <div className='right'>
                 <div>
@@ -35,7 +38,7 @@ const Hero = () => {
                 </div>
                 <div>
                     <img src="./leftArrow.png" />
-                    <img style={{ position: "absolute", top: "15%", height: "150px", width: "150px" }} src="./orange.png" />
+                    <img className='smallCan' src="./orange.png" />
                 </div>
             </div>
         </div>
@@ -47,7 +50,6 @@ function Home() {
         <div className='home'>
             <Nav />
             <Hero />
-            <Footer/>
         </div>
     )
 }

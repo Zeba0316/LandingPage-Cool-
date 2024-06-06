@@ -29,7 +29,8 @@
 
                 p {
                     color: black;
-                    font-size: 1.7rem;
+                    font-family: "custom-font2";
+                    font-size: 1.6rem;
                     font-weight: 500;
                 }
             }
@@ -41,21 +42,80 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: yellow;
+            position: relative;
+
+            .name {
+                color: rgba(255, 255, 255, 0.866);
+                font-family: "custom-font";
+                font-size: 7.7rem;
+                font-weight: bold;
+                position: absolute;
+                padding-left: "auto";
+                padding-right: "auto";
+                bottom: 5%;
+                left: 50%;
+                transform: translateX(-50%);
+                rotate: -3.5deg;
+                text-shadow: 2px 2px 1px rgba(255, 166, 0, 0.523);
+                letter-spacing: 0.2rem;
+                z-index: 3;
+            }
 
             div {
                 display: flex;
                 justify-content: center;
-                align-items:center;
+                align-items: center;
+                position: relative;
                 width: 80%;
                 height: 90%;
-                background-color: red;
-                
-               img{
-                width: 90%;
-                height: 90%;
-                object-fit: cover;
-               }
+
+                .offer {
+                    color: rgb(238, 119, 74);
+                    font-family: "custom-font";
+                    font-size: 3.7rem;
+                    font-weight: bold;
+                    position: absolute;
+                    padding-left: "auto";
+                    padding-right: "auto";
+                    top: 10%;
+                    left: -8%;
+                    rotate: -28deg;
+                    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.579);
+                    z-index: 3;
+
+                }
+
+                .cost {
+                    color: rgb(238, 119, 74);
+                    font-family: "custom-font";
+                    font-size: 3.7rem;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 10%;
+                    right: 1.5%;
+                    rotate: 25deg;
+                    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.579);
+                    z-index: 3;
+                }
+
+                .bg {
+                    position: absolute;
+                    bottom: 0;
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                    z-index: 0;
+                }
+            }
+
+            .canBg {
+                position: absolute;
+                top: 6%;
+                width: 60%;
+                height: 68%;
+                object-fit: contain;
+                z-index: 2;
+                filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.82));
             }
         }
 
@@ -89,8 +149,9 @@
 
                     p {
                         color: black;
+                    font-family: "custom-font2";
                         font-weight: 500;
-                        font-size: 1.1rem;
+                        font-size: 0.9rem;
                     }
                 }
             }
@@ -99,4 +160,12 @@
     }
 
 
+}
+
+.smallCan {
+    position: absolute;
+    top: 15%;
+    height: 150px;
+    width: 150px;
+    filter: drop-shadow(2.3px 2.3px 2px rgba(0, 0, 0, 0.82))
 }
