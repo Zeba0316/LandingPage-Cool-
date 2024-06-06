@@ -1,0 +1,7 @@
+.category{
+    transition: 0.2s scale ease-in-out;
+    &:hover{
+        scale: 1.7;
+    }
+    
+}

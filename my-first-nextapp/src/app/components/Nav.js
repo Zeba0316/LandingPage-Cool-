@@ -1,6 +1,5 @@
-// import { color } from 'framer-motion'
 import React from 'react'
-
+import "../css/nav.scss"
 const Nav = () => {
     const styles = {
         Nav: {
@@ -68,10 +67,10 @@ const Nav = () => {
             </div>
             <div style={styles.navD2}>
                 <div style={styles.categoryContainer}>
-                    <p style={styles.categories}>About</p>
-                    <p style={styles.categories}>Products</p>
-                    <p style={styles.categories}>Gallery</p>
-                    <p style={styles.categories}>Contact</p>
+                    <p className='category' style={styles.categories}>About</p>
+                    <p className='category' style={styles.categories}>Products</p>
+                    <p className='category' style={styles.categories}>Gallery</p>
+                    <p className='category' style={styles.categories}>Contact</p>
                 </div>
             </div>
             <div style={{ ...styles.navD13, backgroundColor: "rgb(238,119,74)" }}>
