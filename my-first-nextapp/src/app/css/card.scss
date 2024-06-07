@@ -55,9 +55,12 @@
             transition: opacity 0.37s ease-in-out, transform 0.37s ease-in-out, filter 0.37s ease-in-out;
         }
     }
+    &:hover .imgCan{
+        scale: 1.048;
+    }
 
     &:hover {
-        transform: perspective(900px) translateY(-6.3%) rotateX(25deg) translateZ(0);
+        transform: perspective(860px) translateY(-6.3%) rotateX(25.5deg) translateZ(0);
         box-shadow: 0px 35px 32px -10px rgba(0, 0, 0, 0.624);
         .cost{
             opacity: 1;
@@ -73,8 +76,7 @@
             img {
                 opacity: 1;
                 transform: translate3d(0%, -39%, -100px);
-
-                filter: grayscale(0%) drop-shadow(2px 2px 2px black);
+                filter:  drop-shadow(2px 2px 2px black);
             }
         }
     }

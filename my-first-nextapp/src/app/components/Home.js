@@ -30,10 +30,13 @@ const Hero = () => {
                         flex: 1
                     }}></div>
                     <div style={{ flex: 1 }}>
-                        <p>we can our premium, organic</p>
+                        {/* <p>we can our premium, organic</p>
                         <p>beans for 16 hours in cold filtered</p>
                         <p>water to extract all things you</p>
-                        <p>love about coffee</p>
+                        <p>love about coffee</p> */}
+                        <p>Few Left</p>
+                        <p>In Stock</p>
+                        <p>Grab Now</p>
                     </div>
                 </div>
                 <div>

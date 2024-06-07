@@ -7,7 +7,7 @@ function Card({ src, name, color }) {
         <p>Rs 80</p>
       </div>
       <div style={{ backgroundImage: `url('/${src}bg.jpg')` }}>
-        <img src={`./${src}.png`} />
+        <img className="imgCan" src={`./${src}.png`} />
       </div>
       <p>{name}</p>
 
