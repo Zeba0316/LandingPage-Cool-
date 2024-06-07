@@ -34,7 +34,7 @@ const Nav = () => {
         categories: {
             color: "black",
             fontFamily: "custom-font2",
-            fontSize: "2rem",
+            fontSize: "2.2rem",
             cursor: "pointer"
         },
         buy: {
