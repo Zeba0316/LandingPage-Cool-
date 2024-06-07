@@ -1,0 +1,31 @@
+.product {
+    flex: 1;
+
+    .up {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: auto;
+        background-color: rgb(252, 248, 238);
+        background-image: url("../../../public/bubble.png");
+        background-repeat: no-repeat;
+
+        p {
+            color: black;
+            font-size: 6rem;
+            font-family: "custom-font2";
+        }
+    }
+
+    .down {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 80vh;
+        background-color: rgb(252, 248, 238);
+    }
+
+}

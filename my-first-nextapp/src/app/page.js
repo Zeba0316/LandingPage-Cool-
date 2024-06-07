@@ -3,7 +3,7 @@ import Home from './components/Home'
 import Footer from './components/Footer'
 import About from './components/About'
 import Gallery from './components/Gallery'
-import Gallery from './components/Gallery'
+import Product from './components/Product'
 
 function page() {
   return (
@@ -11,6 +11,7 @@ function page() {
       <Home />
       <About />
       <Gallery/>
+      <Product/>
       <Footer />
     </div>
   )
