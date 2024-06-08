@@ -9,6 +9,10 @@
     transition: transform 0.23s ease-in-out, filter 0.23s ease-in-out;
     padding-bottom: 7px;
 
+    @media(max-width:1100px){
+        width: 15rem;
+        height: 20rem;
+    }
     .cost {
         opacity: 0;
         display: flex;
@@ -75,8 +79,11 @@
         div {
             img {
                 opacity: 1;
-                transform: translate3d(0%, -39%, -100px);
+                transform: translate3d(1%, -39%, -100px);
                 filter:  drop-shadow(2px 2px 2px black);
+                @media(max-width:750px){
+                transform: translate3d(5%, -28%, -100px);
+                }
             }
         }
     }
