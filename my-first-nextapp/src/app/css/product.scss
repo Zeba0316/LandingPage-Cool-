@@ -45,14 +45,21 @@
         justify-content: space-around;
         align-items: center;
         min-height: 80vh;
+        margin-top: -5rem;
         background-color: rgb(252, 248, 238);
+
+        @media(max-width:1240px) {
+            margin-top: -3rem;
+        }
 
         @media(max-width:750px) {
             flex-direction: column;
             gap: 50px;
             padding-top: 15px;
             padding-bottom: 20px;
+            margin-top: 0rem;
         }
+
         @media(max-width:500px) {
             margin-top: -5px;
         }
