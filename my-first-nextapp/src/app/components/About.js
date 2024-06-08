@@ -6,9 +6,11 @@ function About() {
         <div className='about'>
             {/* upper section */}
             <div className='up'>
-                <p>Live Your Life With Full</p>
-                <p>Of Freshness</p>
                 <div>
+                    <p>Live Your Life With Full</p>
+                    <p>Of Freshness</p>
+                </div>
+                <div className='bubbleContainer'>
                     <div>
                         <p>Only 100</p>
                         <p>Calories</p>
