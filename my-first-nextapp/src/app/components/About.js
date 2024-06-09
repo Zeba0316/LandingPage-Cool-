@@ -51,7 +51,7 @@ function About() {
                     </div>
                 </div>
                 <div>
-                    <p>BUU NOW</p>
+                    <p>BUY NOW</p>
                     <p>WE'VE FEW STOCKS LEFT!</p>
                 </div>
             </div>
