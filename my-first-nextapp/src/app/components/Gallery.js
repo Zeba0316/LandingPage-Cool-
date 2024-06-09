@@ -17,19 +17,19 @@ function Gallery() {
       </div>
       <div className="gall-row2">
         <div className="lemon">
-            <img className="green-bg" src="./HomeCanBg.png"/>
+            <img className="green-bg" src="./homeCanBg.png"/>
             <h2 className="price">Rs 80/-</h2>
             <img  className=" smallCan"src="can1.png"/>
             <h2 className="flavor">SUNSHINE</h2>
         </div>
         <div className="berry">
-            <img className="green-bg" src="./HomeCanBg.png"/>
+            <img className="green-bg" src="./homeCanBg.png"/>
             <h2 className="price">Rs 80/-</h2>
             <img  className=" smallCan"src="can3.png"/>
             <h2 className="flavor">BERRYBON</h2>
         </div>
         <div className="mango">
-            <img className="green-bg" src="./HomeCanBg.png"/>
+            <img className="green-bg" src="./homeCanBg.png"/>
             <h2 className="price">Rs 80/-</h2>
             <img  className=" smallCan"src="can2.png"/>
             <h2 className="flavor">APPLEZING</h2>
