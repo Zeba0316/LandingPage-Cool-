@@ -4,47 +4,57 @@ import Nav from './Nav'
 
 const Hero = () => {
     return (
-        <div className='hero' >
-            <p className='name'>Cool Can</p>
-            <div className='left'>
+        <div>
+            {/* Responsive Hero Section max-width : 900px  */}
+            <div className='responsiveHero'>
                 <div>
-                    <p>Our Summer Sale</p>
-                    <p>is Still Going!</p>
-                </div>
-                <div>
-                    <img src="./leftArrow.png" />
-                    <img className='smallCan' src="./blueberry.png" />
-                </div>
-            </div>
-            <div className='mid'>
-                <div>
+                    <img className='bg' src="./homeCanBg.png" />
+                    <p className='name'>Cool Can</p>
                     <p className='offer'>Don't Miss</p>
                     <p className='cost'>Rs 80 only!</p>
-                    <img className='bg' src='./homeCanBg.png' />
+                    <img className='canBg' src="./lemon.png" />
                 </div>
-                <img className='canBg' src='./lemon.png' />
             </div>
-            <div className='right'>
-                <div>
-                    <div style={{
-                        flex: 1
-                    }}></div>
-                    <div style={{ flex: 1 }}>
-                        {/* <p>we can our premium, organic</p>
-                        <p>beans for 16 hours in cold filtered</p>
-                        <p>water to extract all things you</p>
-                        <p>love about coffee</p> */}
-                        <p>Few Left</p>
-                        <p>In Stock</p>
-                        <p>Grab Now</p>
+            {/* Hero Section */}
+            <div className='hero' >
+                <p className='name'>Cool Can</p>
+                <div className='left'>
+                    <div>
+                        <p>Our Summer Sale</p>
+                        <p>is Still Going!</p>
+                    </div>
+                    <div>
+                        <img src="./leftArrow.png" />
+                        <img className='smallCan' src="./blueberry.png" />
                     </div>
                 </div>
-                <div>
-                    <img src="./leftArrow.png" />
-                    <img className='smallCan' src="./orange.png" />
+                <div className='mid'>
+                    <div>
+                        <p className='offer'>Don't Miss</p>
+                        <p className='cost'>Rs 80 only!</p>
+                        <img className='bg' src='./homeCanBg.png' />
+                    </div>
+                    <img className='canBg' src='./lemon.png' />
+                </div>
+                <div className='right'>
+                    <div>
+                        <div style={{
+                            flex: 1
+                        }}></div>
+                        <div style={{ flex: 1 }}>
+                            <p>Few Left</p>
+                            <p>In Stock</p>
+                            <p>Grab Now</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./leftArrow.png" />
+                        <img className='smallCan' src="./orange.png" />
+                    </div>
                 </div>
             </div>
         </div>
+
     )
 }
 

@@ -1,82 +1,28 @@
-import React from 'react'
-import "../css/nav.scss"
-const Nav = () => {
-    const styles = {
-        Nav: {
-            display: "flex",
-            height: "15vh",
-            width: "auto",
-        },
-        navD13: {
-            flex: 1,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-        },
-        navD2: {
-            flex: 3,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-        },
-        para: {
-            fontSize: "2.6rem",
-            fontFamily:"custom-font2",
-            fontWeight: 500,
-            cursor: "default"
-        },
-        categoryContainer: {
-            display: "flex",
-            width: "75%",
-            justifyContent: "space-between",
-            alignItems: "center",
-        },
-        categories: {
-            color: "black",
-            fontFamily: "custom-font2",
-            fontSize: "2.2rem",
-            cursor: "pointer"
-        },
-        buy: {
-            display: "flex",
-            flexDirection: "column",
-            width: "5rem",
-            height: "5rem",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "50%",
-            backgroundColor: "rgb(255,158,121)",
-            overflow: "hidden"
-        },
-        buyPara: {
-            color:"black",
-            fontFamily: "custom-font",
-            fontSize: "1.3rem",
-            fontWeight: "bold",
-            cursor: "default"
-        }
+import React from 'react';
+import "../css/nav.scss";
 
-    }
+const Nav = () => {
     return (
-        <div style={styles.Nav}>
-            <div style={styles.navD13}>
-                <div style={styles.buy}>
-                    <p style={styles.buyPara}>Buy</p>
-                    <p style={styles.buyPara}>Now</p>
+        <div className="Nav">
+            <div className="navD13">
+                <div className="buy">
+                    <p className="buyPara">Buy</p>
+                    <p className="buyPara">Now</p>
                 </div>
             </div>
-            <div style={styles.navD2}>
-                <div style={styles.categoryContainer}>
-                    <p className='category' style={styles.categories}>About</p>
-                    <p className='category' style={styles.categories}>Products</p>
-                    <p className='category' style={styles.categories}>Gallery</p>
-                    <p className='category' style={styles.categories}>Contact</p>
+            <div className="navD2">
+                <div className="categoryContainer">
+                    <p className='category categories'>About</p>
+                    <p className='category categories'>Products</p>
+                    <p className='category categories'>Gallery</p>
+                    <p className='category categories'>Contact</p>
                 </div>
             </div>
-            <div style={{ ...styles.navD13, backgroundColor: "rgb(238,119,74)" }}>
-                <p style={styles.para}>Grab Your Can</p>
+            <div className="navD13" style={{ backgroundColor: "rgb(238,119,74)" }}>
+                <p className="para">Grab Your Can</p>
             </div>
         </div>
-    )
+    );
 }
-export default Nav
+
+export default Nav;

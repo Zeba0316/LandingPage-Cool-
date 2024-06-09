@@ -1,13 +1,17 @@
 .home {
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
     background-image: url("../../../public/HomeBg.png");
 
     .hero {
         flex: 1;
         display: flex;
-        height: 85vh;
+        min-height: 85vh;
         position: relative;
+
+        @media (max-width:900px) {
+            display: none;
+        }
 
         .name {
             color: rgba(255, 255, 255, 0.866);
@@ -24,6 +28,18 @@
             text-shadow: 2px 2px 1px rgba(255, 166, 0, 0.523);
             letter-spacing: 0.3rem;
             z-index: 3;
+
+            @media(max-width:1300px) {
+                font-size: 9rem;
+            }
+
+            @media(max-width:1100px) {
+                font-size: 7.5rem;
+            }
+
+            @media(max-width:910px) {
+                font-size: 6rem;
+            }
         }
 
         .left {
@@ -43,6 +59,7 @@
 
                 img {
                     position: absolute;
+
                 }
 
                 p {
@@ -50,6 +67,22 @@
                     font-family: "custom-font2";
                     font-size: 3rem;
                     font-weight: 500;
+
+                    @media(max-width:1300px) {
+                        font-size: 2.5rem;
+                    }
+
+                    @media(max-width:1100px) {
+                        font-size: 1.9rem;
+                    }
+
+                    @media(max-width:900px) {
+                        font-size: 1.7rem;
+                    }
+
+                    @media(max-width:750px) {
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -84,6 +117,19 @@
                     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.579);
                     z-index: 3;
 
+                    @media (max-width:1300px) {
+                        font-size: 4rem;
+                    }
+
+                    @media (max-width:1100px) {
+                        left: -22%;
+                    }
+
+                    @media (max-width:920px) {
+                        font-size: 3.7rem;
+                        left: -24%;
+                    }
+
                 }
 
                 .cost {
@@ -97,6 +143,19 @@
                     rotate: 35deg;
                     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.579);
                     z-index: 3;
+
+                    @media (max-width:1300px) {
+                        font-size: 4rem;
+                    }
+
+                    @media (max-width:1100px) {
+                        right: -15%;
+                    }
+
+                    @media (max-width:920px) {
+                        font-size: 3.7rem;
+                        right: -16%;
+                    }
                 }
 
                 .bg {
@@ -106,6 +165,11 @@
                     height: 90%;
                     object-fit: cover;
                     z-index: 0;
+
+                    @media(max-width:1100px) {
+                        height: 92%;
+                        width: 92%;
+                    }
                 }
             }
 
@@ -117,6 +181,16 @@
                 object-fit: contain;
                 z-index: 2;
                 filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.82));
+
+                @media(max-width:1200px) {
+                    height: 54%;
+                    top: 11%;
+                }
+
+                @media(max-width:1100px) {
+                    height: 56%;
+                    top: 11%;
+                }
             }
         }
 
@@ -152,6 +226,22 @@
                         color: black;
                         font-family: "custom-font2";
                         font-size: 2.6rem;
+
+                        @media(max-width:1300px) {
+                            font-size: 2.1rem;
+                        }
+
+                        @media(max-width:1100px) {
+                            font-size: 1.8rem;
+                        }
+
+                        @media(max-width:900px) {
+                            font-size: 1.6rem;
+                        }
+
+                        @media(max-width:900px) {
+                            font-size: 1.6rem;
+                        }
                     }
                 }
             }
@@ -167,5 +257,179 @@
     top: 15%;
     height: 150px;
     width: 150px;
-    filter: drop-shadow(2.3px 2.3px 2px rgba(0, 0, 0, 0.82))
+    filter: drop-shadow(2.3px 2.3px 2px rgba(0, 0, 0, 0.82));
+
+    @media(max-width:1100px) {
+        height: 140px;
+        width: 140px;
+    }
+}
+
+.responsiveHero {
+    display: none;
+    min-height: 85vh;
+
+    @media (max-width:900px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    >div:nth-child(1) {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .bg {
+        height: 30rem;
+        width: 30rem;
+        object-fit: contain;
+
+        @media(max-width:470px) {
+            height: 25rem;
+            width: 25rem;
+        }
+
+        @media(max-width:401px) {
+            height: 19.73rem;
+            width: 19.73rem;
+        }
+    }
+
+    .canBg {
+        height: 18rem;
+        width: 18rem;
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        filter: drop-shadow(2px 2px 2.5px rgba(0, 0, 0, 0.651));
+        transform: translateX(-50%);
+        object-fit: contain;
+
+        @media(max-width:470px) {
+            height: 15rem;
+            width: 15rem;
+            top: 14%;
+        }
+
+        @media(max-width:401px) {
+            height: 12.5rem;
+            width: 12.5rem;
+            top: 18%;
+        }
+    }
+
+    .name {
+        color: rgba(255, 255, 255, 0.866);
+        position: absolute;
+        bottom: 3%;
+        font-family: "custom-font";
+        font-size: 12rem;
+        font-weight: bold;
+        rotate: -3.1deg;
+        text-shadow: 2px 2px 1px rgba(255, 166, 0, 0.523);
+        letter-spacing: 0.2rem;
+
+
+        @media (max-width:688px) {
+            bottom: 9%;
+            font-size: 10rem;
+        }
+
+        @media (max-width:600px) {
+            bottom: 11.5%;
+            font-size: 9rem;
+        }
+
+        @media (max-width:580px) {
+            bottom: 17%;
+            font-size: 7.5rem;
+        }
+
+        @media (max-width:441px) {
+            bottom: 23%;
+            font-size: 6rem;
+        }
+
+        @media (max-width:375px) {
+            bottom: 28%;
+            font-size: 5rem;
+        }
+    }
+
+    .offer {
+        color: rgb(238, 119, 74);
+        font-family: "custom-font";
+        font-size: 4.5rem;
+        font-weight: bold;
+        position: absolute;
+        top: 23%;
+        left: 3%;
+        rotate: -38deg;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.579);
+        z-index: 3;
+
+        @media (max-width:760px) {
+            font-size: 3.8rem;
+            rotate: -40deg;
+        }
+
+        @media (max-width:660px) {
+            font-size: 3.2rem;
+            left: 1%;
+        }
+
+        @media (max-width:580px) {
+            font-size: 2.8rem;
+            left: 3%;
+            top: 4%;
+            rotate: -10deg;
+        }
+
+        @media (max-width:485px) {
+            font-size: 3rem;
+        }
+    }
+
+    .cost {
+        color: rgb(238, 119, 74);
+        font-family: "custom-font";
+        font-size: 4.5rem;
+        font-weight: bold;
+        position: absolute;
+        top: 23%;
+        right: 5%;
+        rotate: 35deg;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.579);
+        z-index: 3;
+
+        @media (max-width:760px) {
+            font-size: 3.8rem;
+        }
+
+        @media (max-width:660px) {
+            font-size: 3.2rem;
+        }
+
+        @media (max-width:580px) {
+            font-size: 2.8rem;
+            right: 2.9%;
+            top: 18%;
+            rotate: 15deg;
+        }
+
+        @media (max-width:485px) {
+            font-size: 2.2rem;
+            top: 25%;
+        }
+
+        @media (max-width:375px) {
+            font-size: 1.8rem;
+            right: 1.4%;
+            top: 25%;
+        }
+    }
+
 }
