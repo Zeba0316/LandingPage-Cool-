@@ -48,6 +48,14 @@
 
         &:hover {
             scale: 1.6;
+
+            @media (max-width:780px) {
+                scale: 1.47;
+            }
+
+            @media (max-width:680px) {
+                scale: 1.6;
+            }
         }
 
         @media(max-width:1100px) {
@@ -76,17 +84,102 @@
     }
 }
 
+
+.responsiveNav {
+    display: none;
+
+    .buy {
+        display: flex;
+        flex-direction: column;
+        width: 5rem;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(255, 158, 121);
+        overflow: hidden;
+
+        .buyPara {
+            color: black;
+            font-family: "custom-font";
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: default;
+        }
+    }
+
+    >div:nth-child(2) {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 95%;
+        background-color: rgb(238, 119, 74);
+        margin: 0% 10%;
+        border-bottom-right-radius: 43%;
+        border-bottom-left-radius: 43%;
+        margin-top: 5px;
+
+        @media (max-width:450px) {
+            display: none;
+        }
+
+        p {
+            font-size: 2.4rem;
+            font-family: "custom-font2";
+            font-weight: 500;
+            cursor: default;
+
+            @media (max-width:680px) {
+                font-size: 2.0rem;
+            }
+
+            @media (max-width:560px) {
+                font-size: 1.65rem;
+            }
+
+            @media (max-width:500px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .hamburgerMenu {
+        display: flex;
+        flex-direction: column;
+        width: 5rem;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(255, 158, 121);
+        overflow: hidden;
+
+        .menu {
+            color: white;
+            font-size: 2.2rem;
+        }
+
+        .cross {
+            color: white;
+            font-size: 2.2rem;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .Nav {
-        flex-direction: column;
+        display: none;
     }
 
-    .categoryContainer {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .categories {
-        padding: 1rem 0;
+    .responsiveNav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        height: 15vh;
+        padding: 0% 8%;
     }
 }
