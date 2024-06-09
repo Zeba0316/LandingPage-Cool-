@@ -21,21 +21,18 @@ function Gallery() {
             <h2 className="price">Rs 80/-</h2>
             <img  className=" smallCan"src="can1.png"/>
             <h2 className="flavor">SUNSHINE</h2>
-           <h2 className="heading">LEMON CAN</h2> 
         </div>
         <div className="berry">
             <img className="green-bg" src="./HomeCanBg.png"/>
             <h2 className="price">Rs 80/-</h2>
             <img  className=" smallCan"src="can3.png"/>
             <h2 className="flavor">BERRYBON</h2>
-            <h2 className="heading">BERRY CAN</h2>
         </div>
         <div className="mango">
             <img className="green-bg" src="./HomeCanBg.png"/>
             <h2 className="price">Rs 80/-</h2>
             <img  className=" smallCan"src="can2.png"/>
             <h2 className="flavor">APPLEZING</h2>
-            <h2 className="heading">GREEN APPLE</h2>
         </div>   
       </div>
     </div>
