@@ -52,10 +52,10 @@ function Footer() {
           <p style={{ color: "lightgray" }}>Instagram</p>
         </div>
         <div className="rights">
-          <p style={{ color: "lightgray" }}>All rights reserved to <span style={{ color: "white" }}>CreativeALiens</span></p>
+          <p style={{ color: "lightgray" }}>All rights reserved to <span style={{ color: "white" }}>Drink-Cool-Association</span></p>
         </div>
         <div className="info">
-          <p style={{ color: "lightgray" }}>info@creativealiens.com</p>
+          <p style={{ color: "lightgray" }}>info@DrinkCool.com</p>
         </div>
       </div>
     </div>

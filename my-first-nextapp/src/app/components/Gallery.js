@@ -36,9 +36,7 @@ function Gallery() {
             <img  className=" smallCan"src="can2.png"/>
             <h2 className="flavor">APPLEZING</h2>
             <h2 className="heading">GREEN APPLE</h2>
-        </div>
-
-      
+        </div>   
       </div>
     </div>
   );

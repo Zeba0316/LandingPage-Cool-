@@ -42,6 +42,19 @@
 }
 
 @font-face {
+  font-family: "custom-font4";
+  src: url("../../fonts/CHARLEY.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "custom-font5";
+  src: url("../../fonts/psycho.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "custom-font2";
   src: url("../../fonts/kenyan\ coffee\ rg.otf");
   font-weight: bold;
