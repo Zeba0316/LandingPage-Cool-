@@ -1,5 +1,5 @@
 .gallery {
-  height: 160vh;
+  min-height: 160vh;
   position: relative;
   width: auto;
   flex: 1;
@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     height: auto;
-    z-index: -1;
+    z-index: -10;
     margin-bottom: 0;
   }
 
@@ -24,20 +24,63 @@
     margin-top: 0;
 
     .bub-img {
-      width: 15%;
-      margin-top: 0;
+      height: 24.5rem;
+      width: 20rem;
+      margin-top: -4%;
 
-      @media (max-width:500px) {
-        width:8rem;
-        height: 15rem;
-        
+      @media (max-width:1000px) {
+        height: 16rem;
+        width: 13rem;
       }
+
+      @media (max-width:750px) {
+        height: 14rem;
+        width: 11rem;
+      }
+
+      @media (max-width:530px) {
+        height: 12rem;
+        width: 7rem;
+      }
+      @media (max-width:400px) {
+        height: 11rem;
+        width: 4.8rem;
+      }
+      @media (max-width:350px) {
+        height: 10rem;
+        width: 4.4rem;
+      }
+
     }
 
     .gall-headings {
       text-align: center;
-      padding: 2rem;
-      margin-top: 0.5rem;
+      margin-top: -1rem;
+
+      @media (max-width:1120px) {
+        font-size: 0.8rem;
+      }
+
+      @media (max-width:1000px) {
+        font-size: 0.76rem;
+      }
+
+      @media (max-width:700px) {
+        font-size: 0.64rem;
+      }
+      @media (max-width:600px) {
+        font-size: 0.5rem;
+      }
+
+      @media (max-width:530px) {
+        font-size: 0.43rem;
+      }
+      @media(max-width:500px) {
+        font-size: 0.34rem;
+      }
+      @media(max-width:350px) {
+        font-size: 0.32rem;
+      }
     }
 
     .gall-h1 {
@@ -46,21 +89,30 @@
       font-size: 6em;
       font-family: "custom-font2";
 
-      @media(max-width:500px) {
-        font-size: 3em;
-    }
     }
 
     .gall-p1 {
       font-weight: 300;
       margin-top: 0.2rem;
+      font-size: 2.4rem;
       font-family: "custom-font2";
-      font-size: 2em;
+      @media (max-width:1000px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width:750px) {
+        font-size: 1.42rem;
+      }
+      @media(max-width:600px) {
+        font-size: 1.25rem;
+      }
       @media(max-width:500px) {
-        font-size: 1em;
+        font-size: 0.98rem;
+      }
+      @media(max-width:350px) {
+        font-size: 0.88rem;
+      }
     }
-    }
-    
+
   }
 
   .gall-row2 {
@@ -69,7 +121,7 @@
     align-items: center;
     padding: 1rem;
 
-    
+
 
     .lemon,
     .berry,
@@ -85,15 +137,16 @@
 
       @media(max-width:500px) {
         max-width: 100%;
-        flex-direction:column;
-        margin-bottom: 20px; 
+        flex-direction: column;
+        margin-bottom: 20px;
         margin: 0.5rem 0;
-        max-height: 130%; 
+        max-height: 130%;
         scale: 0.9;
+
         &:last-child {
-          margin-bottom: 0; 
+          margin-bottom: 0;
         }
-    }
+      }
 
       img.green-bg {
         position: absolute;
@@ -108,10 +161,10 @@
 
         @media(max-width:500px) {
           flex-direction: column;
-         max-width: 100%;
-      }
+          max-width: 100%;
+        }
 
-        
+
       }
 
       .price {
@@ -157,8 +210,8 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
         @media(max-width:500px) {
-         font-size: 4em;
-      }
+          font-size: 4em;
+        }
       }
 
       .heading {
@@ -172,50 +225,46 @@
       }
     }
 
-    
-    
-      @media (max-width: 1100px) {
-        .gall-row1 {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          background-repeat: repeat;
-          margin: 0 auto;
-        
+    @media (max-width: 1100px) {
+      .gall-row1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-repeat: repeat;
+        margin: 0 auto;
+
         .gall-h1 {
-          font-size: 3em;
+          font-size: 3rem;
 
-        
+
         }
-      }}
+      }
+    }
 
 
-    
+
 
     @media (max-width: 750px) {
+
       .lemon,
       .berry,
       .mango {
-       
 
-          flex-direction: column;
-          gap: 50px;
-          padding-top: 15px;
-          padding-bottom: 20px;
-          margin-top: 0rem;
-      
 
-      @media(max-width:500px) {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        margin-top: 0rem;
+
+
+        @media(max-width:500px) {
           margin-top: -5px;
-      }
+        }
       }
 
-      
+
     }
   }
 
 }
-
-
-
-
