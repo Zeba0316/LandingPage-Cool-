@@ -1,6 +1,5 @@
 import React from 'react'
 import "../css/home.scss"
-import Nav from './Nav'
 
 const Hero = () => {
     return (
@@ -61,7 +60,6 @@ const Hero = () => {
 function Home() {
     return (
         <div className='home'>
-            <Nav />
             <Hero />
         </div>
     )
